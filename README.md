@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <img src="./public/preview1.png" alt="Weather Vibe Preview" width="90%" />
+  <img src="./public/images/preview1.png" alt="Weather Vibe Preview" width="90%" />
 </p>
 
 ---
