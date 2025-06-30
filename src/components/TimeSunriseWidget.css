@@ -1,0 +1,63 @@
+/* components/TimeSunriseWidget.css */
+.time-widget-fixed {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 999;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  padding: 14px 18px;
+  border-radius: 15px;
+  color: white;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  width: fit-content;
+  text-align: center;
+  animation: fadeIn 0.5s ease-in-out; /* Fade-in animation on mount */
+  transform: translateY(-10px); /* Uplifts the div by 20px */
+  transition: transform 0.3s ease; /* Smooth transition */
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.time-title {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px; /* Space between time and moon icon */
+}
+
+/* Flip animation for time updates */
+.time-title.flip {
+  animation: flip 0.3s ease-in-out;
+}
+
+@keyframes flip {
+  0% {
+    transform: perspective(400px) rotateX(0deg);
+  }
+  50% {
+    transform: perspective(400px) rotateX(180deg);
+  }
+  100% {
+    transform: perspective(400px) rotateX(360deg);
+  }
+}
+
+.sun-times {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 0.95rem;
+  color: #9ce8d8;
+}

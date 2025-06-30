@@ -1,0 +1,119 @@
+.weather-container {
+  position: absolute;
+  top: 80px;
+  left: px;        /* ✅ Start 30px from the left (adds visual margin) */
+  right: 30px;       /* ✅ Keep a symmetrical 30px padding on right */
+  width: auto;       /* ✅ Let it expand based on content */
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+
+
+.weather-widget {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 16px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  margin-top: 69px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  color: #fff;
+
+  display: flex;
+  justify-content: flex-start;  /* ✅ Ensures inner content starts from left edge of widget */
+  align-items: center;
+  gap: 80px;  /* ✅ Keeps spacing between weather info and chart */
+}
+
+
+
+.weather-icon-center {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 8px; /* 🔽 smaller space below icon */
+}
+
+.weather-icon {
+  width: 100px;
+  height: 100px;
+  animation: float 3s ease-in-out infinite;
+}
+
+.weather-details {
+  text-align: left;
+  padding-left: 12px; /* 🔽 slightly tighter spacing */
+}
+
+.temperature {
+  font-size: 3.2rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.minmax-row {
+  display: flex;
+  justify-content: start;
+  gap: 12px; /* 🔽 tighter */
+  font-size: 0.95rem;
+  color: #9ce8d8;
+  margin-top: 4px;
+}
+
+.location {
+  font-size: 1rem;
+  margin-top: 8px; /* 🔽 less vertical space */
+  color: #ccc;
+}
+
+/* --- TEMPERATURE GRAPH --- */
+.temp-graph {
+  width: 260px;
+  height: 180px;
+  padding: 8px; /* 🔽 slight internal padding */
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 15px;
+  box-shadow: inset 0 0 20px rgba(0, 255, 204, 0.15);
+}
+
+
+/* --- ANALYTICS WIDGET --- */
+.analytics-widget {
+  background: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 15px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.metric-box {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+.metric-box p {
+  font-size: 0.85rem;
+  margin: 0;
+  color: #ccc;
+}
+
+.metric-box h4 {
+  font-size: 1.2rem;
+  margin-top: 6px;
+  color: #fff;
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+  100% { transform: translateY(0); }
+}

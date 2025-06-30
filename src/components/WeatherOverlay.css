@@ -1,0 +1,74 @@
+.rain-overlay::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/animations/rain.gif");
+  background-size: cover;
+  opacity: 0.4;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.snow-overlay::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/animations/snow.gif");
+  background-size: cover;
+  opacity: 0.3;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.stars-overlay::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/animations/stars.gif");
+  background-size: cover;
+  opacity: 0.2;
+  pointer-events: none;
+  z-index: 0;
+}
+.clouds-overlay::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  background-image: url("/animations/clouds.gif");
+  background-size: cover;
+  opacity: 0.25;
+  z-index: 0;
+  pointer-events: none;
+}
+.sunlight-overlay::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  background-image: url("/animations/sunlight.gif");
+  background-size: cover;
+  opacity: 0.15;
+  z-index: 0;
+  pointer-events: none;
+}
+.fog-overlay::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  background-image: url("/animations/fog.gif");
+  background-size: cover;
+  opacity: 0.3;
+  z-index: 0;
+  pointer-events: none;
+}

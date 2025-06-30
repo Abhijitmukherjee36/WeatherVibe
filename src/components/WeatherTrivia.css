@@ -1,0 +1,28 @@
+.weather-trivia-widget {
+  background: rgba(30, 32, 38, 0.60);
+  color: white;
+  padding: 10px;
+  margin-top: 170px;
+  margin-left: 15px;
+  border-radius: 15px;
+  box-shadow: 0 6px 18px rgba(0, 255, 150, 0.1);
+  max-width: 350px;
+  width: 100%;
+  height: 130px;
+  transform: translateY(-18px); /* Uplifts the div by 20px */
+  transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.weather-trivia-title {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  color: #a1f6b8;
+}
+
+.weather-trivia-text {
+  font-size: 1.2rem;
+  line-height: 1.2;
+  text-align: center;
+  color: #ccc;
+}
