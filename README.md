@@ -7,6 +7,9 @@
 <p align="center">
   <img src="./public/images/preview1.png" alt="Weather Vibe Preview" width="90%" />
 </p>
+<p align="center">
+  <img src="./public/images/preview2.png" alt="Weather Vibe Preview" width="90%" />
+</p>
 
 ---
 
