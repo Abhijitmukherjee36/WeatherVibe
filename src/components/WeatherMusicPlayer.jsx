@@ -9,7 +9,7 @@ const getSpotifyAccessToken = async (clientId) => {
   // In a production app, use Authorization Code Flow with a backend
   // This is a simplified client-side approach for demonstration
   try {
-    const redirectUri = window.location.origin;
+    const redirectUri = "https://weather-vibe-njxw.vercel.app/";
     const authUrl = `https://accounts.spotify.com/authorize?client_id=${clientId}&response_type=token&redirect_uri=${encodeURIComponent(redirectUri)}&scope=user-read-private%20user-read-email%20user-top-read`;
     
     // Check if token is already in URL hash (post-redirect)
