@@ -75,7 +75,7 @@ src/
 
 
 🌐 Live Demo
-Live Demo Link <!-- Optional: Replace with real link if deployed -->
+[Live Demo Link](https://weather-vibe-red.vercel.app/) <!-- Optional: Replace with real link if deployed -->
 
 🙏 Credits
 OpenWeatherMap API
