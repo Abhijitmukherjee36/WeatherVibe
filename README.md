@@ -41,18 +41,17 @@
 
 
 ## 📂 Folder Structure
-📁 src
-├── 📁 components/
+
+src/
+├── assets/
+│ └── images/, videos/
+├── components/
 │ ├── WeatherCard.jsx
 │ ├── ForecastCard.jsx
+│ ├── SunriseSunset.jsx
 │ ├── TimeSunriseWidget.jsx
-│ ├── WeatherOverlay.jsx
 │ ├── WeatherMusicPlayer.jsx
-│ └── WeatherTrivia.jsx
-├── 📁 videos/
-│ ├── clear-day.mp4
-│ ├── rainy-night.mp4
-│ └── ...other condition-based videos
+│ └── WeatherOverlay.jsx
 ├── App.jsx
 ├── App.css
 └── index.js
